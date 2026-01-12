@@ -1,0 +1,176 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* FULL HEIGHT */
+html, body {
+  height: 100%;
+}
+
+/* BODY LAYOUT */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #3b2d6f, #8a2f63);
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont;
+  color: #fff;
+}
+
+/* GLASS CARD */
+.glass-card {
+  margin: auto;
+  width: 360px;
+  padding: 28px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+/* HEADER */
+.glass-card h1 {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* LABELS */
+label {
+  display: block;
+  font-size: 13px;
+  opacity: 0.9;
+  margin-bottom: 6px;
+}
+
+/* INPUT + SELECT WRAPPER */
+.input-wrapper,
+.select-wrapper {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+/* ICON */
+.input-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  opacity: 0.85;
+}
+
+/* INPUT FIELD */
+input {
+  width: 100%;
+  padding: 14px 14px 14px 42px;
+  border-radius: 14px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* SELECT */
+.custom-select {
+  width: 100%;
+  padding: 14px 42px 14px 16px;
+  border-radius: 14px;
+  border: none;
+  appearance: none;
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* SELECT ARROW */
+.select-arrow {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* OPTION FIX (DARK MODE) */
+select option {
+  background: #3b2d6f;
+  color: #fff;
+}
+
+/* OUTPUT */
+.output-wrapper {
+  margin: 18px 0;
+  padding: 14px;
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.35);
+  font-size: 13px;
+  word-break: break-all;
+  min-height: 44px;
+}
+
+/* COPY BUTTON */
+button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 16px;
+  border: none;
+  background: #ffffff;
+  color: #3b2d6f;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* FOOTER */
+.footer {
+  margin-top: auto;
+  padding: 18px 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.85);
+  text-align: center;
+}
+
+/* HEART */
+.heart {
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.heart:hover {
+  color: red;
+  transform: scale(1.2);
+}
+
+.heart.active {
+  color: red;
+}
+
+/* MOBILE */
+@media (max-width: 420px) {
+  .glass-card {
+    width: 92%;
+  }
+}

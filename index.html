@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Git Branch Name Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="glass-card">
+    <h1>🌿 Git Branch Generator</h1>
+
+    <!-- Issue Type -->
+    <label>Issue Type</label>
+    <div class="select-wrapper">
+      <select id="type" class="custom-select">
+        <option value="feat">✨ feat (feature / improvement)</option>
+        <option value="bug">🐞 bug</option>
+        <option value="hotfix">🚑 hotfix (production fix)</option>
+        <option value="task">🛠 task (refactor / upgrade)</option>
+        <option value="throwaway">🧪 throwaway (POC / spike)</option>
+      </select>
+      <span class="select-arrow">⌄</span>
+    </div>
+
+    <!-- Jira -->
+    <label>Jira Item Number</label>
+    <div class="input-wrapper">
+      <span class="input-icon">🎫</span>
+      <input id="jira" type="text" placeholder="CBH-123" />
+    </div>
+
+    <!-- Description -->
+    <label>Brief Description</label>
+    <div class="input-wrapper">
+      <span class="input-icon">📝</span>
+      <input id="description" type="text" placeholder="updating npm packages" />
+    </div>
+
+    <!-- Output -->
+    <div class="output-wrapper">
+      <span id="output"></span>
+    </div>
+
+    <button id="copyBtn">Copy Branch Name</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+<footer class="footer">
+  <span>
+    Made with 
+    <span id="heart" class="heart">❤</span> 
+    by Manoj SV
+  </span>
+</footer>
+
+</html>
